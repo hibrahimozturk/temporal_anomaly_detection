@@ -22,3 +22,4 @@ Protest class example
 ![alt text](docs/figures/molotof004.gif "Molotov bomb class example")
 
 Molotov bomb class example
+
