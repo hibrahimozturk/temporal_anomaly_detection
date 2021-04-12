@@ -1,29 +1,24 @@
-## Violance Detection
+## ADNet: Temporal Anomaly Detection in Surveillance Videos
 
-* [Related Words](docs/RelatedWorks.md)
-* [Method](docs/Method.md)
-* [Logs](#logs)
-* [Dataset](docs/Dataset.md)
-* [ToDo](docs/ToDo.md)
-* [Experimental ToDo](docs/ToDo.md#experimental-todo)
-* [Experiment Results](docs/Results.md)
-* [Paper List](docs/RelatedWorks.md#paper-list)
-* [References](docs/RelatedWorks.md#references)
+![alt text](docs/figures/explosion8-2.jpg "Explosion 8 video groundtruth and prediction timelines")
+
+![alt text](docs/figures/robbery102.jpg "Robbery 102 video groundtruth and prediction timelines")
 
 
-### Logs
+### Dataset
 
-* (03/02/2020) feature extraction is more efficient and stable.
-* Molotov, posters and fighting videos are gathered in the Workspace / Dataset / UCF-Crime folder.
-* Name of banner category should be protestation.
-* Videos from molotov and banner categories have been added to Anomaly_Test.txt .
-* There is not pytorch implementation of new action recognition architectures such as csn[3], r2plus1d[6].
-    * Therefore we use i3d-rgb[5] for feature extraction.
-* Selected videos from molotov bomb and banner categories have been added to Anomaly_Detection_splits/Anomaly_Test.txt file.
-* (14/12/2019) There are 2141 temporal annotations, but total number of videos are 2139.
-    * Number of videos have been checked, there are some multiple annotations and missing annotations.
-* Training, test and validation set has been created.
-    * There are only abnormal videos in created sets. 
-* (22/12/2019) Features can be extracted from I3D network
-* Global average pooling layer has been appended to I3D network to reduce feature size to 1024.
-* Temporal stride is 16.
+UCF Crime data set consists of 13 anomaly classes.  We have added two different anomaly classes to the data
+set, which are ”molotov bomb” and ”protest” classes. We also have added 33 videos to fighting class. In total, we have added 216 videos to the training set, 17
+videos to the test set. Training videos of UCF Crime data set are classified in video-level and temporal annotations are not provided for the training set.
+ To train models with temporal information, we annotated anomalies of training videos in temporal domain.
+
+Annotations and videos are publicly available at [the link](https://drive.google.com/file/d/1TnzMzk3TiHJHVsJmqQhzJXvNqml4MijB/view?usp=sharing)
+
+![alt text](docs/figures/banner03.gif "Protest class example")
+
+Protest class example
+
+
+![alt text](docs/figures/molotof004.gif "Molotov bomb class example")
+
+Molotov bomb class example

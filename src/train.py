@@ -1,4 +1,4 @@
-from violance import ViolenceDetection
+from violance_v2 import ViolenceDetection
 from utils.logger import create_logger
 from utils.config import Config
 import sys
