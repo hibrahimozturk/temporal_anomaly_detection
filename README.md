@@ -1,11 +1,11 @@
-## ADNet: Temporal Anomaly Detection in Surveillance Videos
+# ADNet: Temporal Anomaly Detection in Surveillance Videos
 
 ![alt text](docs/figures/explosion8-2.jpg "Explosion 8 video groundtruth and prediction timelines")
 
 ![alt text](docs/figures/robbery102.jpg "Robbery 102 video groundtruth and prediction timelines")
 
 
-### Dataset
+## Dataset
 
 UCF Crime data set consists of 13 anomaly classes.  We have added two different anomaly classes to the data
 set, which are ”molotov bomb” and ”protest” classes. We also have added 33 videos to fighting class. In total, we have added 216 videos to the training set, 17
@@ -22,4 +22,15 @@ Protest class example
 ![alt text](docs/figures/molotof004.gif "Molotov bomb class example")
 
 Molotov bomb class example
+
+## Citation
+If you use the dataset extension or codes in your research, please cite this project
+
+    @article{ozturk2021adnet,
+      title={ADNet: Temporal Anomaly Detection in Surveillance Videos},
+      author={{\"O}zt{\"u}rk, Halil {\.I}brahim and Can, Ahmet Burak},
+      journal={arXiv preprint arXiv:2104.06653},
+      year={2021}
+    }
+
 

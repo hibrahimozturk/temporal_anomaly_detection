@@ -26,3 +26,7 @@ src/utils/__pycache__/
 src/models/__pycache__/
 
 src/feature_extract/models/i3d/model_rgb.pth
+
+src/__pycache__/
+
+src/archive/feature_extract/c3d/__pycache__/
